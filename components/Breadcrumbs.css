@@ -1,0 +1,36 @@
+.breadcrumbs {
+  background: #f5f5f5;
+  min-width: 0;
+  padding: 29.5px 0;
+}
+
+.breadcrumbs-item,
+.breadcrumbs-item a {
+  font-family: "YuGothic";
+  color: #101010;
+  letter-spacing: .13em;
+  font-size: 16px;
+}
+
+.breadcrumbs-item a {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.breadcrumbs-item a:hover {
+  color: #c5c5c5;
+}
+
+.breadcrumbs-item:not(:last-of-type) {
+  padding-right: 28px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-of-type)::after {
+  content: ">";
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=Breadcrumbs.css.map */

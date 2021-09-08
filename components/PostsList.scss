@@ -1,0 +1,71 @@
+@import '../assets/scss/setting';
+
+.post-article {
+  border: 1px solid $news-border-color;
+  padding: 40px 30px;
+}
+
+.post-section {
+  overflow: hidden;
+}
+
+.post-article-image {
+  margin-bottom: 22px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.post-article-image img {
+  width: 100%;
+  transition: .5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.post-article-time {
+  font-family: $base-font-bold;
+  font-size: 16px;
+  letter-spacing: .09em;
+  margin-bottom: 5px;
+  display: block;
+  color: $base-font-color;
+}
+
+.post-list-group {
+  flex-wrap: wrap;
+  margin: 0 -24.5px 10px;
+}
+
+@-webkit-keyframes post-list-show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes post-list-show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.post-list-item {
+  flex: 0 0 33.33%;
+  margin-bottom: 60px;
+  padding: 0 24.5px;
+  animation: 1s post-list-show linear;
+  -webkit-animation: 1s post-list-show linear;
+}
+
+.post-article-text {
+  font-family: $base-jp-font-reg;
+  font-size: 20px;
+  letter-spacing: .02em;
+  line-height: 1.6;
+  font-weight: bold;
+  color: $base-font-color;
+}
+
+.post-link-disabled {
+  pointer-events: none;
+  cursor: default;
+}

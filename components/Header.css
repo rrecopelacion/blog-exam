@@ -1,0 +1,21 @@
+.header-logo {
+  padding: 35px 0;
+}
+
+.header-nav-link {
+  color: #101010;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-family: "MontserratBold";
+  letter-spacing: .1em;
+}
+
+.header-nav-link:hover {
+  color: #c5c5c5;
+}
+
+.header-nav {
+  padding-top: 8px;
+}
+/*# sourceMappingURL=Header.css.map */

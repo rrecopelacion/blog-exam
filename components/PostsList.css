@@ -1,0 +1,83 @@
+.post-article {
+  border: 1px solid #101010;
+  padding: 40px 30px;
+}
+
+.post-section {
+  overflow: hidden;
+}
+
+.post-article-image {
+  margin-bottom: 22px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.post-article-image img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.post-article-image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.post-article-time {
+  font-family: "MontserratBold";
+  font-size: 16px;
+  letter-spacing: .09em;
+  margin-bottom: 5px;
+  display: block;
+  color: #101010;
+}
+
+.post-list-group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -24.5px 10px;
+}
+
+@-webkit-keyframes post-list-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes post-list-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.post-list-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  margin-bottom: 60px;
+  padding: 0 24.5px;
+  animation: 1s post-list-show linear;
+  -webkit-animation: 1s post-list-show linear;
+}
+
+.post-article-text {
+  font-family: "YuGothic";
+  font-size: 20px;
+  letter-spacing: .02em;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #101010;
+}
+
+.post-link-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+/*# sourceMappingURL=PostsList.css.map */
